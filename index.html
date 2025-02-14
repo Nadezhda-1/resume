@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
+<meta charset="windows 1251">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="nadezhda, cv, resume">
 <meta name="description" content="Это сайт - резюме Надежды Ситниковой-Таюрской">
+<link rel="stylesheet" href="styles.css">
 <title>Nadezhda Resume</title>
 </head>
 <body>
-<img src="avatar.jpg" alt="Надежда Ситникова-Таюрская" width="200">
+
+<div class="container">
+
+<div class="info">
+<img src="avatar.jpg" alt="Надежда Ситникова-Таюрская" class="avatar">
+
+<div class="info-text">
 <h1>Надежда Ситникова-Таюрская</h1>
+
 <p>Я - <strong>программист</strong></p>
 <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
 <h4>Социальные сети:</h4>
 <a href="https://vk.com/id548844210" target="_blank">VK</a>
+</div>
+</div>
 
+<div class="card bg-green">
 <h2>Мои хобби</h2>
 
-<ol type="a">
+<ol class="list">
    <li>Путешествия</li>
    <li>Блоггинг</li>
    <li>Фотографирование</li>
    <li>Фитнес</li>
    <li>Музыка</li>
    <li>Чтение</li>
-   <li>Международные отношения</li>
 </ol>
+</div>
+
+<div class="card bg-red">
 <h2>Опыт работы</h2>
-<table>
-   <thead>
+<table class="table">
+   <!-- <thead>
       <tr>
          <th>Название</th>
          <th>Должность</th>
          <th>Год</th>
       </tr>
-   </thead>
+   </thead> -->
    <tbody>
    <tr>
       <td>Филиал ПАО ОАК Новосибирский Авиационный Завод им.В.П.Чкалова</td>
@@ -74,27 +87,44 @@
    </tr>
    </tbody>
 </table>
+</div>
 
+<div class="card bg-yellow">
+<h2>Мои курсы</h2>
+<ul class="link-list">
+<li>
+   <a href="https://vladilen.ru/junior">
+   Получение профессии Frontend Разработчика</a>
+</li>
+<li>
+   <a href="https://vladilen.ru/courses">
+   Все курсы</a>
+</li>
+</ul>
+
+<form action="/" class="form">
 <h2>Связаться со мной</h2>
-<form action="/">
-<div>
-   <label for="name">Ваше имя:</label>
-   <input type="text" id="name" placeholder="Введите имя">
+
+<div class="form-row">
+
+   <div class="form-group">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" placeholder="Введите имя">
+   </div>
+
+   <div class="form-group">
+      <label for="email">Ваш email:</label>
+      <input type="email" id="email" placeholder="Введите email">
+   </div>
 </div>
 
-<div>
-   <label for="email">Ваш email:</label>
-   <input type="email" id="email" placeholder="Введите email">
-</div>
-
-<div>
+<div class="form-group">
    <label for="message">Ваше сообщение:</label>
-   <br>
    <textarea id="message" cols="20" rows="5"
    placeholder="Введите сообщение..."></textarea>
 </div>
 
-   <input type="submit" value="Отправить!">
+   <input class="btn" type="submit" value="Отправить!">
 </form>
 
 <br>
@@ -103,6 +133,6 @@
 <br>
 <br>
 
+</div>
 </body>
 </html>
-
